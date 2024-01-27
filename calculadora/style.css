@@ -1,0 +1,437 @@
+/* CALCULADORA */
+.calculadora{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "input input input input"
+    "clear clear borrar dividir"
+    "numero-7 numero-8 numero-9 multiplicar"
+    "numero-4 numero-5 numero-6 restar"
+    "numero-1 numero-2 numero-3 sumar"
+    "numero-0 numero-0 numero-0 igual";
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.display{
+    grid-area: input;
+    background-color: black;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: right;
+}
+
+.display-value{
+    color: #fff;
+    background-color: black;
+    border: none;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: right;
+
+}
+
+.clear{
+    grid-area: clear;
+    background-color: lightgray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.clear:hover{
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.clear:active{
+    background-color: gray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.borrar{
+    grid-area: borrar;
+    background-color: lightgray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+
+}
+
+.borrar:hover{
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.borrar:active{
+    background-color: gray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+
+.dividir{
+    grid-area: dividir;
+    background-color: rgb(215, 150, 51);
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.dividir:hover{
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.dividir:active{
+    background-color: gray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+
+.numero-7{
+    grid-area: numero-7;
+    background-color: lightgray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-7:hover{
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-7:active{
+    background-color: gray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-8{
+    grid-area: numero-8;
+    background-color: lightgray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-8:hover{
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-8:active{
+    background-color: gray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-9{
+    grid-area: numero-9;
+    background-color: lightgray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-9:hover{
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-9:active{
+    background-color: gray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-4{
+    grid-area: numero-4;
+    background-color: lightgray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-4:hover{
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-4:active{
+    background-color: gray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-5{
+    grid-area: numero-5;
+    background-color: lightgray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-5:hover{
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-5:active{
+    background-color: gray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-6{
+    grid-area: numero-6;
+    background-color: lightgray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-6:hover{
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-6:active{
+    background-color: gray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-1{
+    grid-area: numero-1;
+    background-color: lightgray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+
+}
+
+.numero-1:hover{
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-1:active{
+    background-color: gray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-2{
+    grid-area: numero-2;
+    background-color: lightgray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+
+}
+
+.numero-2:hover{
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-2:active{
+    background-color: gray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-3{
+    grid-area: numero-3;
+    background-color: lightgray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+
+}
+
+.numero-3:hover{
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-3:active{
+    background-color: gray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.multiplicar{
+    grid-area: multiplicar;
+    background-color: rgb(215, 150, 51);
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.multiplicar:hover{
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.multiplicar:active{
+    background-color: gray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.restar{
+    grid-area: restar;
+    background-color: rgb(215, 150, 51);
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.restar:hover{
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.restar:active{
+    background-color: gray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.sumar{
+    grid-area: sumar;
+    background-color: rgb(215, 150, 51);
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.sumar:hover{
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.sumar:active{
+    background-color: gray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-0{
+    grid-area: numero-0;
+    background-color: lightgray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-0:hover{
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.numero-0:active{
+    background-color: gray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.igual{
+    grid-area: igual;
+    background-color: rgb(215, 150, 51);
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.igual:hover{
+    background-color: whitesmoke;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.igual:active{
+    background-color: gray;
+    border: 1px solid #000;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.fuente{
+    font-weight: normal;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.fuente-operadores{
+    font-weight: normal;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+*{
+    box-sizing: border-box;
+}
